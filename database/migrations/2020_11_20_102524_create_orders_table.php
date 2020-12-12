@@ -19,7 +19,6 @@ class CreateOrdersTable extends Migration
             $table->decimal('subtotal', 10, 2);
             $table->integer('discount');
             $table->decimal('total', 10, 2);
-            $table->text('product_all');
             $table->timestamps();
         });
     }

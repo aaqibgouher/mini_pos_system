@@ -14,10 +14,11 @@ class OrderProduct extends Model
         return $this->belongsTo(Product::class);
     }
 
-    public static function insert_order_products_and_created_at($order_id, $value, $quantity, $amount){
+    public static function insert_order_products_and_created_at($order_id, $product_detail, $quantity, $amount){
         OrderProduct::insert([
             "order_id" => $order_id,
-            "product_id" => $value,
+            "product_id" => $product_detail->id,
+            "product_detail" => json_encode($product_detail),
             "quantity" => $quantity,
             "amount" => $amount,
             "created_at" => Common::get_time_and_date()
@@ -41,7 +42,7 @@ class OrderProduct extends Model
             $price = $item->price;
             $amount = +($quantities[$key]) * $price;
 
-            OrderProduct::insert_order_products_and_created_at($order_id, $value, +($quantities[$key]), $amount);
+            OrderProduct::insert_order_products_and_created_at($order_id, $item, +($quantities[$key]), $amount);
             // OrderProduct::insert([
             //     "order_id" => $order_id,
             //     "product_id" => $value,

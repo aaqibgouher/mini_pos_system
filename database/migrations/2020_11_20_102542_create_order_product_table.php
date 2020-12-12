@@ -17,6 +17,7 @@ class CreateOrderProductTable extends Migration
             $table->increments('id');
             $table->integer('order_id');
             $table->integer('product_id');
+            $table->text("product_detail");
             $table->integer('quantity');
             $table->integer('amount');
             $table->timestamps();

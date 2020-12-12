@@ -70,7 +70,7 @@ class OrdersController extends Controller
         $data["error"] = "";
         $data["products"] = Product::all();
         $data['order'] = Order::where('id', $order_id)->first();
-        $data['order_products'] = OrderProduct::with('product')->where('order_id', $order_id)->get();
+        $data['order_products'] = OrderProduct::where('order_id', $order_id)->get();
 
         if($request->isMethod('post')){
             try{
@@ -119,8 +119,7 @@ class OrdersController extends Controller
         $data = [];
         $data["error"] = "";
         $data["order"] = Order::find($order_id);
-        $data["products"] = Product::all();
-        $data["order_products"] = OrderProduct::with('product')->where('order_id', $order_id)->get();
+        $data["order_products"] = OrderProduct::where('order_id', $order_id)->get();
 
         return view("order.view_order", $data);
     }

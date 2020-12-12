@@ -17,7 +17,7 @@
                 <tr style="text-align:center">
                     <th width="10%">S.NO.</th>
                     <th width="10%">ORDER ID</th>
-                    <th width="20%">PRODUCT ID</th>
+                    <th width="20%">PRODUCT NAME</th>
                     <th width="10%">QTY</th>
                     <th width="10%">PRICE</th>
                     <th width="20%">AMOUNT</th>
@@ -30,9 +30,9 @@
                         <tr align="center">
                             <td class="counterCell"></td>
                             <td>{{ $order->id }}</td>
-                            <td>{{ $order_product->product_id }}</td>
+                            <td>{{ json_decode($order_product->product_detail, true)["product_name"] }}</td>
                             <td>{{ $order_product->quantity }}</td>
-                            <td>{{ $order_product->product->price }}</td>
+                            <td>{{ json_decode($order_product->product_detail, true)["price"] }}</td>
                             <td>{{ $order_product->amount }}</td>
                             <td>{{ $order->updated_at ? $order->updated_at : $order->created_at }}</td>
                         </tr>

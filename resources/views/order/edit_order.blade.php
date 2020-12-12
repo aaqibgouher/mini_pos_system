@@ -39,7 +39,7 @@
                                 </select>
                             </td>
                             <td><input type="number" name="quantity[]" value="{{ $order_product->quantity }}" class="form-control item_quantity" required></td>
-                            <td><input type="number" disabled name="price" value="{{ $order_product->product->price }}" class="form-control price"></td>
+                            <td><input type="number" disabled name="price" value="{{ json_decode($order_product->product_detail, true)['price'] }}" class="form-control price"></td>
                             <td><input type="number" disabled name="amount" value="{{ $order_product->amount }}" class="form-control amount"></td>
                             <td>
                                 <a type="button" href="#" class="btn btn-outline-secondary delete_item_btn" data-toggle="tooltip" title="DELETE ITEM"><i class="fa fa-trash"></i></a>
