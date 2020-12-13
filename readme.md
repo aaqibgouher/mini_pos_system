@@ -13,5 +13,6 @@ emai: aaqibgouher@gmail.com
 password: 123456
 
 # DATABASE DESIGN
+![ER Diagram](snapshots/mini_pos_system_db.png)
 
 # SNAPSHOTS
