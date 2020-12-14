@@ -25,10 +25,11 @@ class OrderProduct extends Model
         ]);
     }
 
-    public static function update_order_products_and_updated_at($order_id, $value, $quantity, $amount){
+    public static function update_order_products_and_updated_at($order_id, $product_detail, $quantity, $amount){
         OrderProduct::insert([
             "order_id" => $order_id,
-            "product_id" => $value,
+            "product_id" => $product_detail->id,
+            "product_detail" => json_encode($product_detail),
             "quantity" => $quantity,
             "amount" => $amount,
             "updated_at" => Common::get_time_and_date()
@@ -60,7 +61,7 @@ class OrderProduct extends Model
             $price = $item->price;
             $amount = +($quantities[$key]) * $price;
 
-            OrderProduct::update_order_products_and_updated_at($order_id, $value, +($quantities[$key]), $amount);
+            OrderProduct::update_order_products_and_updated_at($order_id, $item, +($quantities[$key]), $amount);
             // OrderProduct::insert([
             //     "order_id" => $order_id,
             //     "product_id" => $value,

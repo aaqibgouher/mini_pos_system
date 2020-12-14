@@ -1,9 +1,9 @@
 @extends("layout.master")
 
 @section('content')
-    <div class="row mt-5">
-        <div class="col-sm-4 offset-sm-4">
-            <div class="container">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-4 offset-sm-4">
                 <!-- <h2>LOGIN</h2> -->
                 <div class="card">
                     <div class="card-header">

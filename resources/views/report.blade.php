@@ -39,9 +39,9 @@
                             <td class="counterCell"></td>
                             <td>{{ $sale->created_at->format("d M Y") }}</td>
                             <td>{{ $sale->count }}</td>
-                            <td>{{ $sale->discount }}</td>
+                            <td>&#8377; {{ $sale->discount }}</td>
                             <td align="right">&#8377; {{ $sale->total }}</td>
-                            <td>{{ $sale->total - $sale->discount }}</td>
+                            <td>&#8377; {{ $sale->total - $sale->discount }}</td>
                         </tr>
                     @endforeach
                 @else

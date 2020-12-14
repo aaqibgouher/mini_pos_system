@@ -13,9 +13,19 @@
             content: counter(tableCount); 
             counter-increment: tableCount; 
         }
+        /* .body_background {
+            background-image: url('/image/canteen1.jpg');
+            background-repeat: no-repeat;
+        }
+        .body_color {
+            background-color: rgb(191, 191, 191);
+        }
+        .div-transparent {
+            background: rgba(255, 255, 255, 0.8);
+        } */
     </style>
 </head>
-<body>
+<body class="body_background">
     <nav class="navbar navbar-expand-md bg-light navbar-light">
      <!-- Brand -->
         <a class="navbar-brand" href="#">$MINIPOSSYSTEM</a>

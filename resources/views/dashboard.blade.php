@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card">
+                <div class="card div-transparent">
                     <div class="card-header">
                         <h2>TOTAL ORDER</h2>
                     </div>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card">
+                <div class="card div-transparent">
                     <div class="card-header">
                         <h2>TODAY's SALE</h2>
                     </div>

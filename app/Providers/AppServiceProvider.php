@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('token', Auth::token());  
             $view->with("user_id", Auth::id());
             $view->with("user", Auth::user());
-            $view->with("is_login", Auth::token() ? true : false);
+            $view->with("is_login", Auth::token() && Auth::user() ? true : false);
         }); 
     }
 }

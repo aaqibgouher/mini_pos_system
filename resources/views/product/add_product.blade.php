@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row mt-3">
             <div class="col-sm-6 offset-sm-3">
-                <div class="card">
+                <div class="card div-transparent">
                     <div class="card-header">
                     ADD PRODUCT DETAILS
                     </div>

@@ -23,7 +23,7 @@
                                 <textarea class="form-control" type="text" name="description" value="{{ old('description') }}" rows="5" id="comment" required>{{ $product->description }}</textarea>
                             </div>
                             <div class="form-group">
-                                <label>Price</label>
+                                <label>Price(&#8377;)</label>
                                 <input type="number" class="form-control" name="price" value="{{ $product->price }}" required>
                             </div> 
                             <div class="form-check form-group">

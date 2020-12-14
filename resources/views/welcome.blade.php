@@ -1,6 +1,13 @@
 @extends ('layout.master')
 
 @section('content')
-    <h1>Welcome in my Restaurant !</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <h2 style="text-align:center;">Welcome in my Restaurant !</h2>
+            </div>
+        </div>
+    </div>
+    
 
 @endsection

@@ -16,7 +16,7 @@ class CheckLoginUser
      */
     public function handle($request, Closure $next)
     {
-        if(!Auth::token()){
+        if(!Auth::token() || !Auth::user()){
             return redirect()->route("login");
         }
 

@@ -20,7 +20,7 @@
                         <tr>
                             <td class="counterCell"></td>
                             <td>{{ $product->product_name }}</td>
-                            <td>{{ $product->price }}</td>
+                            <td>&#8377; {{ $product->price }}</td>
                             <td>{{ $product->description }}</td>
                             <td>{{ $product->status ? 'Available' : 'Not Available' }} </td>
                             <td>

@@ -19,8 +19,8 @@
                     <th width="10%">S.NO.</th>
                     <th width="50%">PRODUCT NAME</th>
                     <th width="10%">QTY</th>
-                    <th width="10%">PRICE</th>
-                    <th width="10%">AMOUNT</th>
+                    <th width="10%">PRICE(&#8377;)</th>
+                    <th width="10%">AMOUNT(&#8377;)</th>
                     <th width="10%">ACTIONS</th>
                 </tr>
              </thead>
@@ -56,21 +56,21 @@
                 </tr>
                 <tr>
                     <td colspan="3"></td>
-                    <td align="right"><b>Subtotal</b></td>
+                    <td align="right"><b>Subtotal(&#8377;)</b></td>
                     <td align="right"><b><input type="number" value="{{ $order->subtotal }}" class="form-control" name="subtotal" id="subtotal" disabled></b></td>
                     <td></td>
                    
                 </tr>
                 <tr>
                     <td colspan="3"></td>
-                    <td align="right"><b>Discount</b></td>
+                    <td align="right"><b>Discount(&#8377;)</b></td>
                     <td align="right"><b><input type="number" value="{{ $order->discount }}" class="form-control" name="discount" id="discount"></b></td>
                     <td></td>
                    
                 </tr>
                 <tr>
                     <td colspan="3"></td>
-                    <td align="right"><b>Total</b></td>
+                    <td align="right"><b>Total(&#8377;)</b></td>
                     <td align="right"><b><input type="number" value="{{ $order->total }}" class="form-control" name="total" id="total" disabled></b></td>
                     <td></td>
                     

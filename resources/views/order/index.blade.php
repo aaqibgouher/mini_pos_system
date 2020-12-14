@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="container mt-5">
+    <div class="container mt-5 div-transparent">
         <h2>
             ORDERS
             <span>
@@ -27,9 +27,9 @@
                         <tr align="center">
                             <td class="counterCell"></td>
                             <td>{{ $order->order_no }}</td>
-                            <td>{{ $order->subtotal }}</td>
-                            <td>{{ $order->discount }}</td>
-                            <td>{{ $order->total }}</td>
+                            <td>&#8377; {{ $order->subtotal }}</td>
+                            <td>&#8377; {{ $order->discount }}</td>
+                            <td>&#8377; {{ $order->total }}</td>
                             <td>{{ $order->created_at }} </td>
                             <td>
                                 <div class="btn-group">
